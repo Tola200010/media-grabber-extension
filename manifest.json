@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Media Grabber",
+  "version": "0.1.0",
+  "description": "Detects video/audio streams on the page you are viewing and downloads them (direct files and unencrypted/AES-128 HLS).",
+  "permissions": [
+    "webRequest",
+    "downloads",
+    "storage",
+    "tabs",
+    "offscreen",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Media Grabber",
+    "default_popup": "popup.html"
+  }
+}
